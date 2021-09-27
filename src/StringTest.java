@@ -26,6 +26,7 @@ public class StringTest {
         setString(s3);//s3就是一个String 类型的对象，所以是一个实参，对象传递
         setInt(1);//1就是一个固定的值 ，这就是值传递，1 是实参
         System.out.println(s3);//123,因为是值传递，
+        System.out.println("test");
 
 
 
