@@ -6,6 +6,9 @@
  */
 public class StringTest {
 
+    //值传递和对象传递
+
+
     public static void main(String[] args) {
 
         String s = "123";//指向一个内存地址
@@ -20,14 +23,20 @@ public class StringTest {
         s2 = "456";
         System.out.println(s2);//456,但是新创建的，原先的123并没有改变。String的不可变性
 
-        setString(s3);
+        setString(s3);//s3就是一个String 类型的对象，所以是一个实参，对象传递
+        setInt(1);//1就是一个固定的值 ，这就是值传递，1 是实参
         System.out.println(s3);//123,因为是值传递，
 
 
 
     }
 
-    private static void setString(String s){
+    private static void setInt(int i) {
+        System.out.println(i);
+
+    }
+
+    private static void setString(String s){//s 是一个形参
         s = "456";
     }
 
